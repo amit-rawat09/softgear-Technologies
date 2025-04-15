@@ -38,6 +38,7 @@ function Navbar() {
           </a>
           <Link to="/about" className="hover:text-blue-400 transition-all">About us</Link>
           <Link to="/portfolio" className="hover:text-blue-400 transition-all">Portfolio</Link>
+          <Link to="/blogs" className="hover:text-blue-400 transition-all">Blogs</Link>
           <Link to="/careers" className="hover:text-blue-400 transition-all">Careers</Link>
         </div>
       </div>
