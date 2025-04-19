@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
+import companyLogo from '../assets/logo.png'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ function Navbar() {
       <div className="flex justify-between items-center h-16 px-6 md:px-10">
         {/* Logo */}
         <h2 className="font-extrabold text-2xl">
-          <Link to="/">SoftGear</Link>
+          <Link to="/"><span className="flex flex-row items-center gap-2"><img className="rounded-full w-[50px] h-[50px]" src={companyLogo} alt="" />SoftGear</span></Link>
         </h2>
 
         {/* Hamburger Menu (Mobile) */}
@@ -37,6 +38,7 @@ function Navbar() {
           </a>
           <Link to="/about" className="hover:text-blue-400 transition-all">About us</Link>
           <Link to="/portfolio" className="hover:text-blue-400 transition-all">Portfolio</Link>
+          <Link to="/blogs" className="hover:text-blue-400 transition-all">Blogs</Link>
           <Link to="/careers" className="hover:text-blue-400 transition-all">Careers</Link>
         </div>
       </div>
